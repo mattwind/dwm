@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int snap      = 8;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayspacing = 3;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
@@ -11,11 +11,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=8" };
 static const char dmenufont[]       = "monospace:size=8";
-static const char col_gray1[]       = "#000000";
+static const char col_gray1[]       = "#111111";
 static const char col_gray2[]       = "#222222";
 static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#000000";
-static const char col_cyan[]        = "#eeeeee";
+static const char col_gray4[]       = "#bbbbbb";
+static const char col_cyan[]        = "#000000";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -24,7 +24,7 @@ static const char *colors[][3]      = {
 
 /* tagging */
 //static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static const char *tags[] = { "web", "signal", "code", "music", "mixer", "gfx", "virt", "term", "keep" };
+static const char *tags[] = { "web", "signal", "code", "music", "mixer", "gfx", "virt", "keepass" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -73,7 +73,8 @@ static const char *termcmd[]  = { "terminator", NULL };
 
 static const char *xscreensavercmd[]  = { "/usr/bin/xscreensaver-command", "-lock", NULL };
 static const char *screenshot[]  = { "/usr/bin/gnome-screenshot", "--interactive", NULL };
-static const char *keepass[]  = { "/usr/bin/mono", "/opt/keepass/KeePass.exe", NULL };
+//static const char *keepass[]  = { "/usr/bin/mono", "/opt/keepass/KeePass.exe", NULL };
+static const char *keepass[]  = { "/usr/bin/keepassxc", NULL };
 static const char *pavucontrol[]  = { "/usr/bin/pavucontrol", NULL };
 static const char *caja[]  = { "/usr/bin/caja", NULL };
 
