@@ -6,9 +6,12 @@
 
 # Installing
 
-git clone https://github.com/mattwind/dwm
-cd dwm
-make
-sudo make install
+`git clone https://github.com/mattwind/dwm`
+
+`cd dwm`
+
+`make`
+
+`sudo make install`
 
 
